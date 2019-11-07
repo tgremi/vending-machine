@@ -1,7 +1,7 @@
-const { getUnits, updateFile } = require("./utils");
-const { loggerText, createLogger } = require("./logger");
+const { getUnits, updateFile } = require("../../helpers/utils");
+const { loggerText, createLogger } = require("../../helpers/logger");
 const { withoutBalance } = require("./messagesToUser");
-const data = require("./data.json");
+const data = require("../../data.json");
 
 const getTotalBalance = money => {
   return money.reduce(
