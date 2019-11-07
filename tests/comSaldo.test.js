@@ -1,13 +1,13 @@
 const assert = require("assert");
 const path = require("path");
-const { updateFile } = require("../utils");
+const { updateFile } = require("../helpers/utils");
 const {
   verifyTransshipment,
   getTotalBalance,
   getTransshipment,
   getMoney,
   updateDatabaseAndRegisterLog
-} = require("../money");
+} = require("../modules/money/money");
 const MOCK = require("./MOCK/comSaldo.json");
 
 describe("Cliente efetuando uma compra de R$1,45 e inserindo uma nota de R$ 5,00 (maquina com salde de  R$ 3.55)", () => {
